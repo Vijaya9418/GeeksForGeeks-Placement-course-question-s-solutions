@@ -1,0 +1,15 @@
+public static void countDigits(int n){
+
+  int count=0;
+  while(n!=0)
+  {
+      n=n/10;
+      count++;
+      
+  }
+    System.out.print(count);
+
+    //write your code here
+    //print number of digits in n
+
+}

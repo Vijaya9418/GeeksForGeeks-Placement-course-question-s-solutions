@@ -1,0 +1,44 @@
+Given a number N find the prime factorization of the number.
+
+Example 1:
+
+Input:
+N = 100
+Output:
+2 2 5 5
+Explanation:
+100 = 2 * 2 * 5 * 5
+ 
+
+Example 2:
+
+Input:
+N = 27
+Output:
+3 3 3
+Explanation:
+27 = 3 * 3 * 3
+
+
+
+Solution:-
+
+public static void printPrimeFactorization(int n){
+    
+    for(int i=2; i*i<=n; i++)
+    {
+        if(n%i==0)
+        {
+            while(n%i==0)
+            {
+                System.out.print(i+" ");
+                n/=i;
+            }
+        }
+    }
+    if(n>=2)
+    {
+        System.out.print(n);
+    }
+    
+}
