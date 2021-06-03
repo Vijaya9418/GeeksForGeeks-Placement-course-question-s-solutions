@@ -1,0 +1,26 @@
+Given an integer N. Write a program to find last digit of the number.
+
+Example 1:
+
+Input:
+N = 10
+Output: 
+0
+Example 2:
+
+Input:
+N = 9768
+Output: 
+8
+
+
+Solution:-
+
+public static void utility(int n){
+
+    //just complete below statement
+    int ans = n%10;
+
+    //below statement print the result
+    System.out.println(ans);
+}

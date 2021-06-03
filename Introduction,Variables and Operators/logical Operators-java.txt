@@ -1,0 +1,19 @@
+Logical operators are used when we want to check the truth value of certain statements. Logical operators help us in checking multiple statements together for their truthness.
+
+Here we will learn logical operators like AND(&&), OR(||), NOT(!). These operators produce either a true or a false as an output.
+
+Example 1:
+
+Input:
+true false
+
+Output:
+false true false
+
+Example 2:
+
+Input:
+true true
+
+Output:
+true true false
