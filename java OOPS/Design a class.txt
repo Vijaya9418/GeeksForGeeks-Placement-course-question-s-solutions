@@ -1,0 +1,30 @@
+Design a class as described below.
+
+class name : MyClass
+function: 1
+          function name - display()
+          parameters - none
+          return type - void
+          access modifier - public
+          function body - should print
+                          "Hello World"
+Example:
+
+Input:
+None
+Output:
+Hello World
+
+
+
+Solution:-
+
+class MyClass
+{
+
+public void display()
+{
+    System.out.println("Hello World");
+}
+
+}
