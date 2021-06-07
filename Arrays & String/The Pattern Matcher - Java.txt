@@ -1,0 +1,47 @@
+You are given a string s of x and y. You need to verify whether the string follows the pattern xnyn. That is the string is valid only if equal number of ys follow equal number of xs.
+As an example: xxyyxxyy is valid. xy is valid. xxyyx is invalid. xxxyyyxxyyxy is valid.
+
+Example 1:
+
+Input:
+xxyy
+
+Output:
+1
+Example 2:
+
+Input:
+xyx
+
+Output:
+0
+
+
+
+Solution:-
+
+class Geeks{
+    
+    static void follPatt(String s)
+    {
+        int k=0;
+        for(int i=0; i<s.length(); i++)
+        {
+            if(s.charAt(i)=='x')
+              k++;
+  
+            else
+                k--;
+                
+            if(k<0)
+            break;
+        }
+        
+        if(k==0)
+            System.out.print(k+1);
+        else
+            System.out.print(0);
+       
+      System.out.println();
+    }
+}
