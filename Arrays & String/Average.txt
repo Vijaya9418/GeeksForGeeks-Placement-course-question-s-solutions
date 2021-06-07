@@ -1,0 +1,52 @@
+You are given an array numbers that contains integers. You need to return the floor value of average of the non negative integers.
+
+Note: floor returns the nearest mathematical integer value that is less than or equal to the argument.
+
+Example 1:
+
+Input:
+numbers = [-12, 8, -7, 6, 12, -9, 14]
+Output:
+avg = 10
+Explanation: The positive numbers are
+8 6 12 14.
+The sum is 8+6+12+14 = 40,
+Average = 40/4 = 10
+
+Example 2:
+
+Input:
+numbers = [1, 2, 3]
+Output:
+avg = 2
+Explanation: The positive numbers are
+1 2 3.
+The sum is 1+2+3 = 6, Average = 6/3 = 2
+
+
+Solution:-
+
+class Solution
+{
+    int posAverage(int numbers[], int size)
+    {
+      
+       int sum=0;
+       int count=0;
+       
+       for(int i=0; i<numbers.length; i++)
+       {
+            if(numbers[i]>=0)
+            {
+           count++;
+           sum+=numbers[i];
+           
+            }
+           
+       }
+        
+       
+       return sum/count;
+       
+    }
+}

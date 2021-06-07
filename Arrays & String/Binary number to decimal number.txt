@@ -1,0 +1,23 @@
+Given a Binary Number B, find its decimal equivalent.
+ 
+
+Example 1:
+
+Input: B = 10001000
+Output: 136
+Example 2:
+
+Input: B = 101100
+Output: 44
+
+
+Solution:-
+
+class Solution
+{
+    public int binary_to_decimal(String str)
+    {
+        int decimal=Integer.parseInt(str,2);
+        return decimal;
+    }
+}
