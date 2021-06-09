@@ -1,0 +1,32 @@
+Given an array arr[] of size N containing integers. The task is to find the maximum element from the array using streams.
+
+Example 1:
+
+Input:
+4
+1 2 3 4
+
+Output:
+4
+
+Explanation:
+From 1 2 3 4, 4 is max clearly.
+Example 2:
+
+Input:
+3
+3 2 1
+
+Output:
+3
+
+Explanation:
+From 3 2 1, 3 is max clearly.
+
+
+Solution:-
+public static int maxUsingStreams(int []arr)
+{
+    return Arrays.stream(arr).max().getAsInt();
+   
+}

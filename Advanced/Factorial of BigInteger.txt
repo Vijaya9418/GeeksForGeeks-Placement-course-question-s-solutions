@@ -1,0 +1,29 @@
+Given one integer x. Your task is to find factorial of x. You have to return value of factorial x in BigInteger.
+
+ 
+
+Example:
+
+
+Input:
+x = 10 
+
+Output:
+3628800
+
+Explanation: Factorial of x is 3628800.
+
+
+Solution:-
+public static BigInteger factorial(int a){
+        
+   BigInteger f=new BigInteger("1");
+   
+   
+   for(int i=2; i<=a; i++)
+   {
+        BigInteger x= BigInteger.valueOf(i);
+       f=f.multiply(x);
+   }
+   return f;
+}

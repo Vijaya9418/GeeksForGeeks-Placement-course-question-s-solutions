@@ -1,0 +1,27 @@
+You need to use lambda expression to print "Hello".
+
+Example 1 :
+
+Input:
+No Input
+Output:
+Hello
+Example 2 :
+
+Input:
+No Input
+Output:
+Hello
+
+
+Solution:-
+interface Hello {
+    public void sayHello();
+}
+
+public static Hello helperFunction() 
+{
+    return () -> System.out.println("Hello");
+  
+  
+}

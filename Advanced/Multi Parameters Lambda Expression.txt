@@ -1,0 +1,36 @@
+You need to use lambda expression to add two numbers x and y.
+
+Example 1 :  
+
+Input:
+5 7
+
+Sample Output:
+12
+
+Explanation:
+5+7 = 12
+Example 2 :  
+
+Input:
+1 5
+
+Sample Output:
+6
+
+Explanation:
+1+5 = 6
+
+
+Solution:-
+
+interface Add {
+    public int addParameters(int x, int y);
+}
+
+public static Add helperFunction() 
+{
+    return(p1,p2)->p1+p2;
+    //Your code here
+    //Implement the addParameters method that returns x+y. 
+}

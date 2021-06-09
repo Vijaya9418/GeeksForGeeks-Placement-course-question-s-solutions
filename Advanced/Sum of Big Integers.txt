@@ -1,0 +1,35 @@
+Given two positive integers X and Y. You have to add two integers and output their sum.
+
+ 
+
+Example 1:
+
+Input:
+X = 3, Y = 4
+Output:
+7
+Explanation:
+Sum of X and Y is 7
+ 
+
+Example 2:
+
+Input:
+X = 8, Y = 2 
+Output:
+10
+Explanation:
+Sum of X and Y is 10.
+
+Solution:-
+class MathematicalOperation{
+    
+    static BigInteger add(BigInteger x, BigInteger y){
+            
+     x=x.add(y);
+     
+  return x;
+        
+    }
+    
+}

@@ -1,0 +1,33 @@
+Given two BigIntegers X and Y. You have to multiply X and Y.
+
+ 
+
+Example 1:
+
+Input:
+X = 3, Y = 4
+Output:
+12
+Explanation:
+Multiplication of X and Y is 12
+ 
+
+Example 2:
+
+Input:
+X = 8, Y = 2 
+Output:
+16
+Explanation:
+Multiplication of X and Y is 16.
+
+Solution:-
+class MathematicalOperation{
+    
+    static BigInteger mul(BigInteger x, BigInteger y){
+    
+       x=x.multiply(y);
+       return x;
+    }
+    
+}

@@ -1,0 +1,32 @@
+Given an array arr[] of size N containing integers. The task is to find the sum of the array using streams.
+
+Example 1 :
+
+Input:
+4
+1 2 3 4
+
+Output:
+10
+
+Explanation:
+1+2+3+4 = 10
+Example 2 :
+
+Input:
+3
+3 2 1
+
+Output:
+6
+
+Explanation:
+3+2+1 = 6
+
+
+Solution:-
+public static int sumUsingStreams(int []arr)
+{
+    return Arrays.stream(arr).sum();
+    
+}

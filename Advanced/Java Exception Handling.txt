@@ -1,0 +1,68 @@
+Given two integers (positive , negative or even 0) say a and b. Find the minimum value of a$b where $ is any arithmetic operation like multiply(*), Divide(/), Addition(+),Substraction(-). Use Exception Handling in this problem.
+
+Input: 
+The first line will contain an integer T (number of test cases). Each test case will contain two integers a and b.
+
+Output: 
+Print the minimum value of a$b.
+
+Constraints: 
+1 < = T < = 100
+-103<=a,b<=103
+
+Example:
+ Input:
+2
+5 -5
+4 0
+
+Output:
+-25
+0
+
+EXPLANATION:
+
+In test case 1: 5*(-5) = -25
+In test case 2: 4*0 = 0
+
+
+Solution:-
+
+class TestClass
+{
+    int a;
+    int b;
+    
+    TestClass(int p, int q)
+    {
+        a=p;
+        b=q;
+    }
+    
+    public void findMin()
+    {
+        int arr[]=new int[4];
+        arr[0]=a*b;
+        arr[1]=a+b;
+        arr[2]=a-b;
+        try{
+        arr[3]=a/b;
+        }
+        catch(Exception e)
+        {
+            System.out.print("");
+        }
+        
+        int m=arr[0];
+        for(int i=0; i<4; i++)
+        {
+            if(arr[i]<m)
+            {
+                m=arr[i];
+               
+            }
+             
+        }
+        System.out.println(m);
+    }
+}
