@@ -1,0 +1,28 @@
+You are given an array arr(0-based indexing). The size of the array is given by n. You need to update an element at the given index. The arr[i] of the array is initially set to i+1.
+
+Example 1:
+
+Input:
+n = 5
+index = 4,element = 8
+Output: 8
+Example 2:
+
+Input:
+n = 2
+index = 0,element = 99
+Output: 99
+
+
+Solution:-
+class UpdateArray
+{
+    // Complete the function
+    // arr[]: input array
+    // index: input  index
+    // element: element to be updated
+    public static void updateArray(int arr[], int index, int element)
+    {
+        arr[index]=element;
+    }
+}
