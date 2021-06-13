@@ -1,0 +1,50 @@
+Given an array a[ ] of size N. The task is to check if array is sorted or not. A sorted array can either be increasingly sorted or decreasingly sorted. Also consider duplicate elements to be sorted.
+
+Example 1:
+
+Input:
+N = 5
+a[] = {1 1 2 2 3}
+Output: 1
+Example 2:
+
+Input:
+N = 2
+a[] = {4 2}
+Output: 1
+
+
+Solution:-
+
+class Solution
+{
+    //Complete the function
+    public static int isSorted(int arr[], int n)
+    {
+        int k=1;
+int kk=1;
+for(int i=1;i<n;i++)
+{
+if(arr[i]<arr[i-1])
+{
+    k=0;
+    
+}
+if(arr[i]>arr[i-1])
+{
+    kk=0;
+    
+}
+}
+if(k==1||kk==1)
+{
+    return 1;
+    
+}
+else {
+    return 0;
+    
+}
+    }
+}
+

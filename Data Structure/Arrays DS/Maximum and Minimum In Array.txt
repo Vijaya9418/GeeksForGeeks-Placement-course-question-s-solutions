@@ -1,0 +1,36 @@
+Given an array arr of size n, find maximum and minimum elements in the array.
+
+Example 1:
+
+Input:
+N = 4
+arr[] = {5 4 2 1}
+Output: 5 1
+Example 2:
+
+Input:
+N = 1
+arr[] = {8}
+Output: 8 8
+
+Solution:-
+
+
+class Get
+{
+    public static int maximumElement(int arr[],int n)
+    {
+        Arrays.sort(arr);
+           return arr[n-1];
+      
+    }
+    
+    public static int minimumElement(int arr[],int n)
+    {
+        Arrays.sort(arr);
+        
+     
+          return arr[0];
+    }
+}
+
