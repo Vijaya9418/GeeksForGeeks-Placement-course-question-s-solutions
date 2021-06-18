@@ -1,0 +1,36 @@
+11. Print Array Elements Using Recursion 
+Basic Accuracy: 63.56% Submissions: 2606 Points: 1
+You are given an array arr of size n. You need to print the array elements from start to end using given recursive function.
+
+
+Example 1:
+
+Input:
+n = 5
+arr[] = {1,2,3,4,5}
+Output: 1 2 3 4 5
+
+Example 2:
+
+Input:
+n = 4
+arr[] = {5,4,2,1}
+Output: 5 4 2 1
+
+
+Solution:-
+
+class Solution
+{
+    // Complete the function
+    // arr[]: input array
+    // n: size of inout array
+    public static void printArrayRecursively(int arr[], int n)
+    {
+        if(n==0)
+        return;
+        
+        printArrayRecursively(arr,n-1);
+       System.out.print(arr[n-1]+" ");
+    }
+}

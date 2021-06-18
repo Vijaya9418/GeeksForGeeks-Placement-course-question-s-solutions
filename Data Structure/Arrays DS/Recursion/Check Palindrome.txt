@@ -1,0 +1,44 @@
+You are given a number n. You need to see if the number is a palindrome or not (recursively)
+
+Example 1:
+
+Input:
+n = 100
+Output: 0
+Example 2:
+
+Input:
+n = 101
+Output: 1
+
+Solution:-
+
+class Solution
+{
+    // Complete the function
+    // N: input element
+    static boolean isPalin(int n)
+    {
+        int sum=0, r,temp;
+        boolean tem=true;
+        temp=n;
+        while(n>0)
+        {
+            r=n%10;
+            sum=(sum*10)+r;
+            n=n/10;
+        }
+        if(temp==sum)
+        {
+            tem=true;
+            
+        }
+        else
+        {
+            tem=false;
+        }
+        return tem;
+        // Check if the number is palindrome or not
+        //You may use a helper function if you like
+    }
+}

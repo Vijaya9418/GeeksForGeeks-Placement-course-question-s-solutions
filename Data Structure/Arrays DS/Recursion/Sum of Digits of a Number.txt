@@ -1,0 +1,33 @@
+You are given a number n. You need to find the sum of digits of n.
+
+Example 1:
+
+Input:
+n = 1
+Output: 1
+Explanation: Sum of digit of 1 is 1.
+Example 2:
+
+Input:
+n = 99999
+Output: 45
+Explanation: Sum of digit of 99999 is 45.
+
+
+Solution:-
+
+class Solution
+{
+    // complete the function
+    public static int sumOfDigits(int n)
+    {
+      if(n==0)
+      {
+          return 0;
+      }
+      else
+      {
+          return (n%10+sumOfDigits(n/10));
+      }
+    }
+}
